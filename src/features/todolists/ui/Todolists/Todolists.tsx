@@ -20,7 +20,7 @@ export const Todolists = () => {
   const {
     // если навести на data, будет тип DomainTodolist[], т.е. то что вернули в авпишке там в transformResponce
     data,
-    isLoading,
+    // isLoading,
     // refetch, // пример как в ручную запросисть данные после скажем того же обновления, а так тегами
   } = useGetTodolistsQuery()
   // если бы нам надо было передавать какую-нибудь id, просто передавали бы её: useGetTodolistsQuery('123').

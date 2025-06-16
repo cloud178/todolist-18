@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import { AUTH_TOKEN } from "@/common/constants"
 
 export const baseApi = createApi({
-  //fetchBaseQuery - аналог axios, и, как и axios, это обёртка над нативным fetch-ом
+  //fetchBaseQuery - аналог axios, и, как и axios, это обёртка над нативным fetch-ом, попадаем сюда при каждом запросе
   baseQuery: fetchBaseQuery({
     baseUrl: import.meta.env.VITE_BASE_URL,
     // prepareHeaders - аналог интерсепторов
